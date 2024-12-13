@@ -1,13 +1,12 @@
-## Portfolio React site bootstrapped with Next.js, using Typescript and Tailwind CSS.
+## Portfolio React app built with Next.js, Typescript, and Tailwind CSS.
 
-Deployed here: https://nick-prather-portfolio.vercel.app/
+Deployed: (in progress)
 
-This site is intended to be a work in progress utilizing technologies of my current focus while displaying my professional abilities and artistic accomplishments.
-Sort of a living resume/portfolio.
+This site is intended to be a work in progress utilizing technologies of my current focus while displaying my professional abilities and artistic accomplishments. Eventually, users will be able to order art prints and digital music downloads.
 
 ## Updates:
 
-v2.0 launched 9/23/2024
+12-12-2024  Initial Commit of existing repository Next_TS_Portfolio
 
 -
 -
