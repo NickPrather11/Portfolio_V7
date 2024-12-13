@@ -23,7 +23,7 @@ const NavbarMobileChildDropdown = ({
             onClick={() => onStateUpdates(false)}
           >
             <div
-              className="flex flex-row justify-start mx-4 pl-4 gap-4 text-xl text-right text-white 
+              className="flex flex-row justify-start mx-4 pl-4 gap-4 text-xl text-right 
           group-hover:text-slate-400"
             >
               <Center>{dropLink.icon}</Center>

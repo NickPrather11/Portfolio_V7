@@ -53,7 +53,7 @@ const NavbarMobile = ({ className }: any) => {
           ref={dropdownRef}
           className={`${
             expanded
-              ? "flex flex-col absolute z-50 right-0 mr-2 mt-16 rounded-xl border border-slate-200 bg-slate-900"
+              ? "flex flex-col absolute z-50 right-0 mr-2 mt-16 shadow-2xl rounded-xl border border-slate-200 bg-green-50"
               : "hidden"
           }`}
         >

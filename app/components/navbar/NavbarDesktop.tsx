@@ -25,7 +25,7 @@ const NavbarDesktop = ({ className }: any) => {
       <ActiveLinkContext.Provider value={activeLink}>
         <div className="flex flex-row items-center justify-center">
           {activeLink === "Home" ? (
-            <p className="text-2xl text-slate-500">|</p>
+            <p className="text-2xl text-slate-700">|</p>
           ) : null}
           <NavbarDesktopLink
             path="../"
@@ -36,13 +36,13 @@ const NavbarDesktop = ({ className }: any) => {
             handleActiveLink={activeLinkHandler}
           />
           {activeLink === "Home" ? (
-            <p className="text-2xl text-slate-500">|</p>
+            <p className="text-2xl text-slate-700">|</p>
           ) : null}
         </div>
 
         <div className="flex flex-row items-center justify-center">
           {activeLink === "Projects" ? (
-            <p className="text-2xl text-slate-500">|</p>
+            <p className="text-2xl text-slate-700">|</p>
           ) : null}
           <NavbarDesktopLink
             path="../projects"
@@ -53,13 +53,13 @@ const NavbarDesktop = ({ className }: any) => {
             handleActiveLink={activeLinkHandler}
           />
           {activeLink === "Projects" ? (
-            <p className="text-2xl text-slate-500">|</p>
+            <p className="text-2xl text-slate-700">|</p>
           ) : null}
         </div>
 
         <div className="flex flex-row items-center justify-center">
           {activeLink === "About" ? (
-            <p className="text-2xl text-slate-500">|</p>
+            <p className="text-2xl text-slate-700">|</p>
           ) : null}
           <NavbarDesktopLink
             path="../about"
@@ -91,7 +91,7 @@ const NavbarDesktop = ({ className }: any) => {
             handleActiveLink={activeLinkHandler}
           />
           {activeLink === "About" ? (
-            <p className="text-2xl text-slate-500">|</p>
+            <p className="text-2xl text-slate-700">|</p>
           ) : null}
         </div>
 

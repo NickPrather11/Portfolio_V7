@@ -63,7 +63,7 @@ const NavbarDesktopLink = ({
       <Center className="my-2">
         <Link href={path} className="mx-2 ">
           <button onClick={() => handleActiveLink(name)}>
-            <Center className="gap-2 text-lg text-white hover:text-gray-500/75">
+            <Center className="gap-2 text-lg hover:text-gray-500/75">
               {icon}
               <p>{name}</p>
             </Center>
@@ -87,7 +87,7 @@ const NavbarDesktopLink = ({
           ref={dropdownRef}
           className={`${
             expanded
-              ? "flex flex-col absolute z-50 mt-2 px-2 rounded-xl border border-slate-200 bg-slate-900"
+              ? "flex flex-col absolute z-50 mt-2 px-2 rounded-xl border border-slate-200"
               : "hidden"
           }`}
         >

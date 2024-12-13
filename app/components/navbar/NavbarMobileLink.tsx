@@ -49,7 +49,7 @@ const NavbarMobileLink = ({
       <div className="group flex flex-row">
         <Link
           href={path}
-          className="flex flex-row p-4 gap-2 text-2xl text-white group-hover:text-slate-400"
+          className="flex flex-row p-4 gap-2 text-2xl group-hover:text-slate-400"
           onClick={() => onParentExpandedStateUpdate(false)}
         >
           <Center className="gap-4">

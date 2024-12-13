@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import Loading from "../components/LoadingComponent";
 import Page from "../components/Page";
 import Link from "next/link";
-import Card from "../components/Card";
 
 export default function ProjectsLayout({
   children,
@@ -11,7 +10,7 @@ export default function ProjectsLayout({
 }>) {
   return (
     <Page>
-      <div className="flex justify-center w-full bg-slate-700 bg-opacity-90">
+      <div className="flex justify-center w-full">
         <h1 className="py-6">
           <Link href="/projects" className="hover:text-slate-300">
             PROJECTS

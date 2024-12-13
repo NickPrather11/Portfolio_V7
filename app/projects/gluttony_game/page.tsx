@@ -26,9 +26,9 @@ const GluttonyGamePage = () => {
           rel="noopener noreferrer"
           className="flex"
         >
-          <h2 className="flex-grow-0 mb-4 py-2 px-4 text-nowrap bg-slate-500 rounded-full border-2 border-slate-800 hover:text-slate-300 hover:bg-slate-700">
+          <h3 className="flex-grow-0 mb-4 py-2 px-4 text-nowrap shadow-xl rounded-full border-2 border-slate-800 hover:text-slate-300 hover:bg-slate-700">
             {project.title}
-          </h2>
+          </h3>
         </Link>
         <Link
           href={project.hrefRepo}
@@ -36,9 +36,9 @@ const GluttonyGamePage = () => {
           rel="noopener noreferrer"
           className="flex"
         >
-          <h3 className="flex-grow-0 mb-10 py-2 px-4 bg-slate-500 rounded-full border-2 border-slate-800 hover:text-slate-300 hover:bg-slate-700">
+          <h4 className="flex-grow-0 mb-10 py-2 px-4 shadow-xl rounded-full border-2 border-slate-800 hover:text-slate-300 hover:bg-slate-700">
             GitHub Repo
-          </h3>
+          </h4>
         </Link>
         <p>{project.descriptionExtended}</p>
       </Card>

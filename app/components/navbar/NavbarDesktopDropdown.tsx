@@ -28,7 +28,7 @@ const NavbarDesktopDropdown = ({
           }}
         >
           <div
-            className="flex flex-row justify-start gap-4 text-lg text-right text-white 
+            className="flex flex-row justify-start gap-4 text-lg text-right 
           hover:text-gray-500/75"
           >
             <Center>{dropLink.icon}</Center>
