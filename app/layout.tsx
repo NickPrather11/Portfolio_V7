@@ -31,7 +31,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/AvatarNick.svg" />
       </head>
-      <body className="flex flex-col m-0 p-0 min-h-screen pb-40 text-black bg-green-50 bg-cover bg-center bg-fixed">
+      <body className="flex flex-col m-0 p-0 min-h-screen text-black bg-green-50 bg-cover bg-center bg-fixed">
         <Navbar />
         <Suspense fallback={<Loading />}>{children}</Suspense>
         <Footer />
