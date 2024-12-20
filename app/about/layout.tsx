@@ -61,7 +61,7 @@ export default function AboutPageLayout({ children }: any) {
         </h1>
       </div>
 
-      <hr className="mt-6 w-11/12 md:w-7/12" />
+      <hr className="mt-6 w-11/12 md:w-7/12 border-slate-500" />
 
       <ActiveTabContext.Provider value={activeTabState}>
         <div className="flex flex-row flex-wrap justify-evenly w-full pt-2 md:justify-center md:gap-10 md:w-7/12">
@@ -71,7 +71,7 @@ export default function AboutPageLayout({ children }: any) {
               href={tab.href}
               className={`tab-link ${
                 activeTabState === tab.stateNum
-                  ? "bg-slate-800 bg-opacity-70"
+                  ? "bg-slate-300"
                   : ""
               }`}
             >

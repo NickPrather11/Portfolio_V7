@@ -87,7 +87,7 @@ const NavbarDesktopLink = ({
           ref={dropdownRef}
           className={`${
             expanded
-              ? "flex flex-col absolute z-50 mt-2 px-2 rounded-xl border border-slate-200"
+              ? "flex flex-col absolute z-50 mt-2 px-2 rounded-xl bg-slate-200 border border-slate-400 shadow-xl"
               : "hidden"
           }`}
         >

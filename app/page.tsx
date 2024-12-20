@@ -14,17 +14,12 @@ export default function Home() {
         </Center>
       </Card>
 
-      {/* Testing for background slideshow implementation 
-      <div className="flex justify-center m-10 bg-gray-800">
-        <img className="absolute w-80" src="/backgrounds/2x2_1a.jpg" alt="" />
-        <img className="absolute w-80 opacity-100" src="/backgrounds/2x2_2a.jpg" alt="" />
-      </div>
-      */}
+      <hr className="mt-6 w-10/12 md:w-7/12 border-slate-500" />
 
       <Center id="all_landing_cards" className="flex flex-col w-full m-6">
         <Center className="flex-col justify-evenly lg:flex-row">
           <CardLink
-            href="https://github.com/NickPrather11/Next_TS_Portfolio"
+            href="https://github.com/NickPrather11/Portfolio_V7"
             target="_blank"
             title="Site Repo"
             description="See the code repository for this site"

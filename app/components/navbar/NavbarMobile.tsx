@@ -43,7 +43,7 @@ const NavbarMobile = ({ className }: any) => {
       <div className="flex items-center mr-4 text-4xl">
         <button
           onClick={() => setExpanded((curr) => !curr)}
-          className={`p-2 rounded-full ${expanded ? "bg-slate-500" : ""}`}
+          className={`p-2 rounded-full ${expanded ? "bg-slate-400" : ""}`}
         >
           <BsList />
         </button>
@@ -53,7 +53,7 @@ const NavbarMobile = ({ className }: any) => {
           ref={dropdownRef}
           className={`${
             expanded
-              ? "flex flex-col absolute z-50 right-0 mr-2 mt-16 shadow-2xl rounded-xl border border-slate-200 bg-green-50"
+              ? "flex flex-col absolute z-50 right-0 mr-2 mt-16 shadow-xl rounded-xl border border-slate-400 bg-slate-200"
               : "hidden"
           }`}
         >
@@ -64,7 +64,7 @@ const NavbarMobile = ({ className }: any) => {
             childDropdownContents={[]}
             onParentExpandedStateUpdate={handleParentExpandedStateUpdate}
           />
-          <hr className="w-full" />
+          <hr className="w-11/12 border-slate-400 self-center" />
           <NavbarMobileLink
             name="Projects"
             icon={<BsTools />}
@@ -72,7 +72,7 @@ const NavbarMobile = ({ className }: any) => {
             childDropdownContents={[]}
             onParentExpandedStateUpdate={handleParentExpandedStateUpdate}
           />
-          <hr className="w-full" />
+          <hr className="w-11/12 border-slate-400 self-center" />
           <NavbarMobileLink
             name="About"
             icon={<BsInfoCircle />}

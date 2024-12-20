@@ -13,7 +13,7 @@ const NavbarMobileChildDropdown = ({
   onStateUpdates,
 }: ChildDropdownProps) => {
   return (
-    <div>
+    <div className="">
       {dropdownContents.map((dropLink: ChildDropdownLink, index: number) => {
         return (
           <Link
