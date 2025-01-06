@@ -10,7 +10,7 @@ export default function Home() {
       <Card>
         <Center className="flex-col lg:max-w-6xl">
           <p className="text-md">
-            Hi, I&apos;m Nick - full stack web application developer with a background in software implementation. Experienced in data transformation, mobile and web-based SaaS implementation, cross-functional solutions development, technical writing, audio/video production and editing, and more.
+            Hi, I&apos;m Nick - full stack web application developer with a background in software implementation. Experienced in data transformation, mobile and web-based SaaS implementation, cross-functional solutions development, technical writing, audio/video production and editing, and more.<p></p>
           </p>
         </Center>
       </Card>
@@ -23,7 +23,10 @@ export default function Home() {
           target="_self"
           title="Projects"
           className=""
-        />
+          btnTxt="more projects"
+        >
+          <p>Check out past portfolio versions, current projects, old projects, etc.</p>
+        </LandingCard>
           
         <hr className="my-4 w-11/12 border-slate-500 self-center" />
 
@@ -32,7 +35,10 @@ export default function Home() {
           target="_blank"
           title="Site Repo"
           className=""
-        />
+          btnTxt="view on GitHub"
+        >
+          <p>View the codebase for this site.</p>
+        </LandingCard>
 
         <hr className="my-4 w-11/12 border-slate-500 self-center" />
           
@@ -41,7 +47,10 @@ export default function Home() {
           target="_blank"
           title="Planned Updates"
           className=""
-        />
+          btnTxt="view on GitHub"
+        >
+          <p>Follow my progress and planned updates for this site.</p>
+        </LandingCard>
           
         <hr className="my-4 w-11/12 border-slate-500 self-center" />
 
@@ -50,7 +59,10 @@ export default function Home() {
           target="_self"
           title="About"
           className=""
-        />
+          btnTxt="learn more"
+        >
+          <p>Learn more about me, my music, and my art.</p>
+        </LandingCard>
       </div>
     </Page>
   );

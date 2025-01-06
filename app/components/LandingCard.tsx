@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import Center from "./Center";
 import Card from "./Card";
 import Link from "next/link";
@@ -10,13 +10,17 @@ export interface ILandingCard {
   target: string;
   className: string;
   title: string;
+  btnTxt: string;
+  children: ReactNode;
 }
 
 const LandingCard = ({
   href,
   target,
   className,
-  title
+  title,
+  btnTxt,
+  children
 }: ILandingCard) => {
     const [clicked, setClicked] = useState(false);
     const router = useRouter();
@@ -45,18 +49,18 @@ const LandingCard = ({
       <h3>{title}</h3>
     
         <Card>
-            <p>Display summary content here</p>
+          {children}
         </Card>
 
       <div className="flex justify-self-end w-4/12 px-4 py-2 shadow-lg rounded-lg border border-slate-800 hover:text-slate-400">
           {target === "_blank" ? (
             <button onClick={(e) => handleOnClickExternal(e)}>
-              <Center className="text-sm">learn more</Center>
+              <Center className="text-sm">{btnTxt}</Center>
             </button>
           ) : (
             <Link href={href} legacyBehavior={true}>
               <a onClick={(e) => handleOnClickInternal(e)}>
-                <Center className="text-sm">learn more</Center>
+                <Center className="text-sm">{btnTxt}</Center>
               </a>
             </Link>
           )}
