@@ -4,6 +4,7 @@ import Center from "./Center";
 import Card from "./Card";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import CardLink from "./CardLink";
 
 export interface ILandingCard {
   href: string;
@@ -20,50 +21,25 @@ const LandingCard = ({
   className,
   title,
   btnTxt,
-  children
+  children,
 }: ILandingCard) => {
-    const [clicked, setClicked] = useState(false);
-    const router = useRouter();
-    
-    const handleOnClickExternal = (e: React.MouseEvent<HTMLElement>) => {
-        e.preventDefault();
-        setClicked(true);
-        setTimeout(() => {
-          const newWindow = window.open(href, target, "noopener,noreferrer");
-          if (newWindow) newWindow.opener = null;
-          setClicked(false);
-        }, 500);
-      };
-    
-      const handleOnClickInternal = (e: React.MouseEvent<HTMLElement>) => {
-        e.preventDefault();
-        setClicked(true);
-        setTimeout(() => {
-          router.push(href);
-          setClicked(false);
-        }, 500);
-      };
-
   return (
     <div className={`px-6 ${className}`}>
       <h3>{title}</h3>
-    
-        <Card>
-          {children}
-        </Card>
 
-      <div className="flex justify-self-end w-4/12 px-4 py-2 shadow-lg rounded-lg border border-slate-800 hover:text-slate-400">
-          {target === "_blank" ? (
-            <button onClick={(e) => handleOnClickExternal(e)}>
-              <Center className="text-sm">{btnTxt}</Center>
-            </button>
-          ) : (
-            <Link href={href} legacyBehavior={true}>
-              <a onClick={(e) => handleOnClickInternal(e)}>
-                <Center className="text-sm">{btnTxt}</Center>
-              </a>
-            </Link>
-          )}
+      <Card>{children}</Card>
+
+      <div className="flex justify-self-end w-4/12 px-4 py-2">
+        <CardLink
+          key={href}
+          href={href}
+          target={target}
+          title={null}
+          description={btnTxt}
+          className="shadow-lg rounded-lg border border-slate-800 text-nowrap"
+          childImgPath={null}
+          isAnimated={true}
+        />
       </div>
     </div>
   );

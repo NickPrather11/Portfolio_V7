@@ -10,13 +10,17 @@ export default function Home() {
       <Card>
         <Center className="flex-col lg:max-w-6xl">
           <p className="text-md">
-            Hi, I&apos;m Nick - full stack web application developer with a background in software implementation. Experienced in data transformation, mobile and web-based SaaS implementation, cross-functional solutions development, technical writing, audio/video production and editing, and more.<p></p>
+            Hi, I&apos;m Nick - full stack web application developer with a
+            background in software implementation. Experienced in data
+            transformation, mobile and web-based SaaS implementation,
+            cross-functional solutions development, technical writing,
+            audio/video production and editing, and more.<p></p>
           </p>
         </Center>
       </Card>
 
       <hr className="my-4 w-11/12 border-slate-500" />
-      
+
       <div className="flex flex-col w-full">
         <LandingCard
           href="./projects"
@@ -25,9 +29,10 @@ export default function Home() {
           className=""
           btnTxt="more projects"
         >
-          <p>Check out past portfolio versions, current projects, old projects, etc.</p>
+          Check out past portfolio versions, current projects, old projects,
+          etc.
         </LandingCard>
-          
+
         <hr className="my-4 w-11/12 border-slate-500 self-center" />
 
         <LandingCard
@@ -37,11 +42,11 @@ export default function Home() {
           className=""
           btnTxt="view on GitHub"
         >
-          <p>View the codebase for this site.</p>
+          View the codebase for this site.
         </LandingCard>
 
         <hr className="my-4 w-11/12 border-slate-500 self-center" />
-          
+
         <LandingCard
           href="https://github.com/users/NickPrather11/projects/1"
           target="_blank"
@@ -49,9 +54,9 @@ export default function Home() {
           className=""
           btnTxt="view on GitHub"
         >
-          <p>Follow my progress and planned updates for this site.</p>
+          Follow my progress and planned updates for this site.
         </LandingCard>
-          
+
         <hr className="my-4 w-11/12 border-slate-500 self-center" />
 
         <LandingCard
@@ -61,7 +66,7 @@ export default function Home() {
           className=""
           btnTxt="learn more"
         >
-          <p>Learn more about me, my music, and my art.</p>
+          Learn more about me, my music, and my art.
         </LandingCard>
       </div>
     </Page>

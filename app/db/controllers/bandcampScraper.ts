@@ -15,8 +15,8 @@ const scrapeAlbums = async (targetBaseURL: string): Promise<IAlbumObject[]> => {
   if (targetBaseURL.includes("hellohugo")) {
     page = "hellohugo";
     modifiedURL += "/music";
-  } else if (targetBaseURL.includes("nickprather")) {
-    page = "nickprather";
+  } else if (targetBaseURL.includes("liminaldeities")) {
+    page = "liminaldeities";
   }
 
   const response = await fetch(modifiedURL);
@@ -60,7 +60,7 @@ const scrapeAlbums = async (targetBaseURL: string): Promise<IAlbumObject[]> => {
     let name: string = "";
     if (page === "hellohugo") {
       name = "Hello Hugo";
-    } else if (page === "nickprather") {
+    } else if (page === "liminaldeities") {
       name =
         $(element).children("a").children("p").children("span").text().trim() ||
         "Liminal Deities";
@@ -105,7 +105,7 @@ const scrapeReleaseDates = async (albums: IAlbumObject[]) => {
 
 const getAllAlbums = async () => {
   let bandcampPages = [
-    "https://nickprather.bandcamp.com",
+    "https://liminaldeities.bandcamp.com",
     "https://hellohugo.bandcamp.com",
   ];
 

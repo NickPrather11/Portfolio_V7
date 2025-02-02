@@ -8,10 +8,11 @@ import { useRouter } from "next/navigation";
 export interface ICardLink {
   href: string;
   target: string;
-  className: string;
-  title: string;
-  description: string;
+  className: string | null;
+  title: string | null;
+  description: string | null;
   childImgPath: string | null;
+  isAnimated: boolean;
 }
 
 const CardLink = ({
@@ -21,6 +22,7 @@ const CardLink = ({
   title,
   description,
   childImgPath,
+  isAnimated,
 }: ICardLink) => {
   const [clicked, setClicked] = useState(false);
   const router = useRouter();
@@ -48,7 +50,7 @@ const CardLink = ({
     <Card
       className={`flex justify-center w-3/4 shadow-lg rounded-lg border-2 border-slate-800 lg:w-1/2 hover:text-slate-400
         ${
-          clicked
+          isAnimated && clicked
             ? "transition duration-500 [transform-style:preserve-3d] [transform:rotateY(360deg)]"
             : ""
         }
